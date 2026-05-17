@@ -106,11 +106,7 @@ npm run preview
 
 ## Live Demo
 
-- **Demo URL:** `https://atomquest-goal-portal-sepia.vercel.app/`
-
-## Repository
-
-- **GitHub:** https://github.com/venox-2007/atomquest-goal-portal
+- **Demo URL:** https://atomquest-goal-portal-sepia.vercel.app/
 
 ## Future Enhancements
 
