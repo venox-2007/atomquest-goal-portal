@@ -1,0 +1,91 @@
+﻿@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Inter", "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  background:
+    radial-gradient(1200px circle at 5% 0%, rgba(34, 211, 238, 0.08), transparent 42%),
+    radial-gradient(900px circle at 95% 10%, rgba(59, 130, 246, 0.08), transparent 36%),
+    linear-gradient(165deg, #080d18 0%, #0b1322 45%, #070b14 100%);
+  color: #e2e8f0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.panel {
+  @apply rounded-2xl border border-slate-700/60 bg-slate-900/70 shadow-[0_10px_30px_rgba(2,6,23,0.35)] backdrop-blur;
+}
+
+.premium-card {
+  @apply rounded-2xl border border-slate-700/70 bg-gradient-to-br from-slate-900/90 to-slate-900/55 shadow-[0_12px_34px_rgba(2,6,23,0.45)] transition duration-300;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-700 bg-slate-950/85 px-3 py-2.5 text-sm text-slate-100 outline-none transition duration-200 placeholder:text-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20;
+}
+
+.select {
+  @apply rounded-xl border border-slate-700 bg-slate-950/85 px-3 py-2.5 text-sm text-slate-100 outline-none transition duration-200 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20;
+}
+
+.button-primary {
+  @apply rounded-xl bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_8px_20px_rgba(34,211,238,0.25)] transition duration-200 hover:-translate-y-0.5 hover:bg-cyan-300;
+}
+
+.button-secondary {
+  @apply rounded-xl border border-slate-600 bg-slate-900/60 px-4 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:-translate-y-0.5 hover:border-slate-400 hover:bg-slate-800/70 hover:text-white;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border border-slate-600/80 bg-slate-800/80 px-2.5 py-1 text-xs font-medium tracking-wide text-slate-200;
+}
+
+.table-shell {
+  @apply rounded-2xl border border-slate-700/60 bg-slate-900/70 shadow-[0_10px_30px_rgba(2,6,23,0.35)] backdrop-blur overflow-hidden;
+}
+
+.data-table {
+  @apply min-w-full text-sm;
+}
+
+.data-table thead {
+  @apply bg-slate-900/85;
+}
+
+.data-table th {
+  @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400;
+}
+
+.data-table tbody tr {
+  @apply border-t border-slate-800/90 transition duration-200 hover:bg-slate-800/35;
+}
+
+.data-table td {
+  @apply px-4 py-3.5 align-middle;
+}
+
+.skeleton {
+  @apply relative overflow-hidden rounded-lg bg-slate-800/85;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.2), transparent);
+  animation: shimmer 1.3s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
