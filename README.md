@@ -106,7 +106,7 @@ npm run preview
 
 ## Live Demo
 
-- **Demo URL:** `https://your-live-demo-link-here`
+- **Demo URL:** `https://atomquest-goal-portal-sepia.vercel.app/`
 
 ## Repository
 
